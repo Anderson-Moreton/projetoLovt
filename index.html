@@ -5,54 +5,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Projeto Lovt</title>
+    <title>Projeto LOVT</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
     <header>
-        <h1>Lovt</h1>
-        <p>Your love,</p>
-        <p>your loft!</p>
+        <div class="container">
+            <div class="logo">
+                <h1>LOVT</h1>
+                <H2>You Love, <br>
+                    your loft!</H2>
+            </div>
+    
+            <button class="menu-toggle">☰</button>
+        </div>
     </header>
+
     <main>
-        <section class="imagemPrincipal">
-            <img src="img/Rectangle 3.svg" alt="Interior da casa">
+        <section class="banner">
+            <div class="container">
+                <div class="slide">
+                    <img src="img/slider-image.png" alt="foto do loft">
+                </div>
+
+                <div class="setas">
+                    <a href="#" class="left" title="anterior">
+                        <img src="img/seta-1.svg" alt="Anterior">
+                    </a>
+                    <a href="#" class="right" title="proximo">
+                        <img src="img/seta-2.svg" alt="Proximo">
+                    </a>
+                </div>
+            </div>
         </section>
-        <section>
-            <div class="sale">
-                <img src="img/Rectangle 6.svg" alt="">
-                <h2>$1,200</h2>
-                <button type="submit">New</button>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi tempora distinctio, dolore assumenda corrupti dolorum veniam voluptatum blanditiis explicabo reprehenderit voluptates? Fugit esse deleniti recusandae cum impedit sed architecto!</p>
-            </div>
-            <div>
-                <img src="img/Rectangle 7.svg" alt="">
-                <h2>$2,00</h2>
-                <button type="submit">Sale</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, rem? Aspernatur, accusamus voluptates! Quidem corporis obcaecati, aperiam illo voluptas velit repudiandae vitae minima eum aliquam quibusdam itaque modi cupiditate eveniet?</p>
+
+        <section class="projects">
+            <div class="container">
+                <article>
+                    <div class="thumb" style="background-image: url('img/project-1.png');"></div>
+                    <div class="info">
+                        <div class="price-tag">
+                            <p class="price">$12.00</p>
+                            <div class="tag tag-new">NEW</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis metus ac gravida dignissim. Donec ac maximus metus. Donec in fringilla ex. Integer neque nisi, lacinia eu ipsum nec, venenatis vestibulum massa. Nam a faucibus arcu. In vitae interdum est. Nam a interdum sem, in accumsan purus.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="thumb" style="background-image: url('img/project-2.png');"></div>
+                    <div class="info">
+                        <div class="price-tag">
+                            <p class="price">$12.00</p>
+                            <div class="tag tag-sale">SALE</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis metus ac gravida dignissim. Donec ac maximus metus. Donec in fringilla ex. Integer neque nisi, lacinia eu ipsum nec, venenatis vestibulum massa. Nam a faucibus arcu. In vitae interdum est. Nam a interdum sem, in accumsan purus.</p>
+                    </div>
+                </article>
             </div>
         </section>
-        <section class="youStyle">
-            <div>
-                <h3>Industrial</h3>
-                <img src="img/Rectangle 11.svg" alt="">
+
+
+        <section class="styles">
+            <div  class="container">
+                <h2> Your Style </h2>
+
+                <article style="background-image: url(img/industrial.svg);">
+                    <h3>Industrial</h3>
+                </article>
+
+                <article style="background-image: url(img/modern.svg);">
+                    <h3>Modern</h3>
+                </article>
+
+                <article style="background-image: url(img/classic.svg);">
+                    <h3>Classic</h3>
+                </article>
             </div>
-            <div>
-                <h3>Modern</h3>
-                <img src="img/Rectangle 12.svg" alt="">
-            </div>
-            <div>
-                <h3>Classic</h3>
-                <img src="img/Rectangle 13.svg" alt="">
+        </section>
+
+        <section class="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <form action="form_sucesso.html">
+                    <label for="input_nome">Nome</label>
+                    <input type="text" name="nome" id="input_nome" placeholder="Insira seu nome completo" required>
+
+                    <label for="input_email">Email</label>
+                    <input type="email" name="email" id="input_email" placeholder="Insira seu email" required>
+
+                    <label for="input_mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="input_mensagem" required></textarea>
+                    <button type="mensagem" id="input_mensagem">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
-    <footer>
 
+    <footer>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.8769783685511!2d-46.57575111785999!3d-23.541350269561278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x795101cf0926d612!2sShopping%20Metr%C3%B4%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1620687470397!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="informacoes">
+            <p>LOVT - You love, your loft!</p>
+            <p>Broad St, <br>
+                Newark, NJ 07102 - USA</p>
+
+            <p>
+                <a href="tel:+5511999998888">11 99999-8888</a>
+                <a href=""> (WhatsApp)</a> <!--http://wa.me/[numero]-->
+                <!--https://www.convertte.com.br/gerador-link-whatsapp/-->
+            </p>
+
+            <p><a href="mailto:contact@lovtrealstate.com">contact@lovtrealstate.com</a></p>
+        </div>
     </footer>
 </body>
 
