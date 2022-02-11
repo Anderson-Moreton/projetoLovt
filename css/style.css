@@ -1,25 +1,8 @@
 * {
-    margin: 0;
+    box-sizing: border-box;
 }
 
-header {
+body {
     font-family: "Ropa Sans", sans-serif;
-    color:#777777;
-    margin-top: 20px;
-    margin-left: 50px;
-}
-
-h1{
-    text-transform: uppercase;
-}
-
-p {
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
-}
-
-.imagemPrincipal {
-    display:flex;
-    align-items: center;
+    margin: 0;
 }
