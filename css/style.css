@@ -33,7 +33,7 @@ header .container {
     /* alinhamento horizontal */
     align-items: center;
     /* alinhamento vertical */
-    margin-left: 30px;
+    margin-left: 150px;
 }
 
 header .logo h1 {
@@ -74,9 +74,9 @@ main section.projects .container article {
     color: #888888;
 }
 
-main section.projects .container article .casaVenda {
+main section.projects .container article .casaVenda img {
     width: 100%;
-    height: 350px;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -116,6 +116,24 @@ main section.banner .titulo {
     display: flex;
     padding: 10%;
     text-align: center;
+}
+
+main section.styles .container h2 {
+    text-align: center;
+    color: #888888;
+    font-size: 40px;
+}
+
+main section.styles .container article img {
+    width: 100%;
+    
+}
+
+main section.styles .container article h3 {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    display: flex;
 }
 
 footer {
